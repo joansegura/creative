@@ -2,11 +2,16 @@
   <strong>Title:</strong>
   <%= @article.title %>
 </p>
- 
+<p>
+  <%= image_tag @article.photo.url %>
+</p>
 <p>
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
+ 
+<h2>Comments</h2>
+<%= render @article.comments %>
  
 <h2>Add a comment:</h2>
 <%= form_for([@article, @article.comments.build]) do |f| %>

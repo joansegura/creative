@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class='container'>
+	<ul class='nav nav-tabs'>
 
-<%= yield %>
+		<li><%=link_to 'Hot', articles_path %></li>
+		<li><%=link_to '+', new_article_path %></li>
+	</ul>
+	<%= yield %>
+</div>
+
 
 </body>
 </html>
