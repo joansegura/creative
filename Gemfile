@@ -53,4 +53,4 @@ gem 'bootstrap-sass', '~> 2.3.1.0'
 
 gem "paperclip", "~> 4.3"
 #gem 'paperclip', github: 'thoughtbot/paperclip'
-gem 'aws-sdk'
+#gem 'aws-sdk'
