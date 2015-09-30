@@ -7,4 +7,7 @@ class Article < ActiveRecord::Base
                   :url  => "/assets/articles/:id/:style/:basename.:extension",
                   :path => ":rails_root/public/assets/articles/:id/:style/:basename.:extension"
 
+
+  validates_attachment_file_name :photo, matches: [/png\Z/, /jpe?g\Z/]
+
 end
