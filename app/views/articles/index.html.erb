@@ -13,22 +13,21 @@
         <!-- Project One -->
         <div class="row">
             <div class="col-md-7">
+              <h3><%= article.title %></h3>
               <% if article.photo? %>
-                  <%= image_tag(article.photo.url(), :class => "img-responsive")%>
+                  <%=link_to image_tag(article.photo.url(), :class => "img-responsive"), article_path(article)%>
               <% end %>                
             </div>
             <div class="col-md-5">
-                <h3><%= article.title %></h3>
                 <p><%= article.text %></p>
-                <%= link_to 'Show', article_path(article), :class =>"btn btn-success" %>
                 <%= link_to 'Edit', edit_article_path(article), :class =>"btn btn-primary" %>
                 <%= link_to 'Destroy', article_path(article),
               method: :delete,
-              data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+              data: { confirm: 'Are you sure?' }, :class => "btn btn-danger pull-right" %>
             </div>
         </div>
         <!-- /.row -->
         <!--hr>
-  <% end %> 
+<% end %>
   </div>
   <!-- /.container -->

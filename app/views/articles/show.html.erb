@@ -1,7 +1,7 @@
-<p>
-  <strong>Title:</strong>
+
+<h1>
   <%= @article.title %>
-</p>
+</h1>
 <% if @article.photo? %>
   <p>
     <%= image_tag @article.photo.url %>
@@ -9,11 +9,9 @@
 <% end %>
 
 <p>
-  <strong>Text:</strong>
   <%= @article.text %>
 </p>
  
-<h2>Comments</h2>
 <%= render @article.comments %>
  
 <h2>Add a comment:</h2>
