@@ -24,4 +24,5 @@ production:
   <<: *default
 #  host: localhost
 #  username: user
-  database: db/production.sqlite3
+#  database: db/production.sqlite3
+  database: db/development.sqlite3
