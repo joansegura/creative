@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 group :production do
+  gem 'sqlite3'
   gem 'pg'
 end
 
@@ -47,6 +48,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-unicorn'
 end
 
 gem 'bootstrap-sass', '~> 2.3.1.0'
@@ -54,3 +58,4 @@ gem 'bootstrap-sass', '~> 2.3.1.0'
 gem "paperclip", "~> 4.3"
 #gem 'paperclip', github: 'thoughtbot/paperclip'
 #gem 'aws-sdk'
+gem 'sqlite3'
