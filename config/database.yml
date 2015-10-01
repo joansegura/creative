@@ -26,3 +26,4 @@ production:
 #  username: user
 #  database: db/production.sqlite3
   database: db/development.sqlite3
+  
