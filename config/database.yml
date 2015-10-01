@@ -22,6 +22,6 @@ test:
 
 production:
   <<: *default
-  host: localhost
-  username: user
+#  host: localhost
+#  username: user
   database: db/production.sqlite3
